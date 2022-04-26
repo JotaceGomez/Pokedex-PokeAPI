@@ -10,11 +10,19 @@ export class PokedexServiceService {
 
   constructor(private httpClient:HttpClient) { }
 
+  //Obtener pokemons con limite
   getPokemons() {
     return this.httpClient.get(this.baseUrl + "pokemon?limit=10");
   }
 
-  getPokemon(id: number) {
+  //Obtener por ID
+  getPokemonByID(id: number) {
     return this.httpClient.get(this.baseUrl + "pokemon/" + id);
   }
+
+  //Obtener por nombre
+  getPokemonByName(name: string) {
+    return this.httpClient.get(this.baseUrl + "pokemon/" + name);
+  }
+
 }
