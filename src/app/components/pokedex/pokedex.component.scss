@@ -104,6 +104,8 @@
 
 .inputPokedex{    
     width: 260px;
+    font-family: "Press Start 2P";
+
 }
 
 .screenLeft{
@@ -130,7 +132,10 @@
     background-color: #598130;
     width: 290px;
     height: 55px;
-    border: solid 1px black;    
+    border: solid 1px black; 
+    font-family: "Press Start 2P";
+    font-size: 7pt;
+   
 }
 
 .line1{
@@ -138,6 +143,7 @@
     justify-content: space-between;
     margin-left: 8px;
     margin-right: 8px;
+    padding-top: 5px;
 }
 
 .pokemonName{
