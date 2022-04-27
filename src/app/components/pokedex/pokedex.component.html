@@ -1,0 +1,48 @@
+<div class="backgroundColor">
+    <div class="pkdxBackground">
+        <div class="pkdxTemplateLeft">
+
+            <div class="buttonsTop">
+                <div class="circleButtonWhite">
+                    <div class="circleButtonBlue"></div>
+                </div>
+                <div class="buttonRed"></div>
+                <div class="buttonYellow"></div>
+                <div class="buttonGreen"></div>
+            </div>
+
+            <div class="pokemonSearch">
+                <input class="inputPokedex" type="text" [(ngModel)]="searchedName">
+                <button class="buttonSearch" (click)="searchPokemon(searchedName)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                </button>
+            </div>
+
+            <div class="screenLeft">
+                <div class="pokemonView">
+                    <img src="{{pokemon.sprites.front_default}}" width="100%" alt="">
+                    <!-- <img src="{{pokemon.sprites.back_default}}" alt="">
+                    <img src="{{pokemon.sprites.front_shiny}}" alt="">
+                    <img src="{{pokemon.sprites.back_shiny}}" alt=""> -->
+
+
+                </div>
+            </div>
+
+            <div class="footerLeft">
+             <div class="line1">
+                <h6 class="pokemonName">Name: {{pokemon.name}}</h6>
+                <h6 class="pokemonID">ID: {{pokemon.id}}</h6>
+            </div>
+                <h6 class="pokemonTypes">Type:
+                    {{pokemon.types[0].type.name}}</h6>                
+            </div>
+
+
+        </div>
+        <div class="pkdxTemplateRight">
+
+        </div>
+    </div>
+</div>

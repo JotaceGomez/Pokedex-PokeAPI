@@ -1,0 +1,157 @@
+.backgroundColor{
+    background-image: linear-gradient(rgb(0, 216, 235), rgb(0, 83, 184));
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pkdxBackground{
+    background-color: #e70f0be2;
+    width: 700px;
+    height: 500px;
+    margin-top: 80px;
+    border: solid black 2px;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pkdxTemplateLeft{
+    background-color: #E70D0B;
+    width: 345px;
+    height: 490px;
+    border: solid black 2px;
+    border-radius: 2%;
+}
+
+.pkdxTemplateRight{
+    background-color: #E70D0B;
+    width: 345px;
+    height: 490px;
+    border: solid black 2px;
+    border-radius: 2%;
+}
+
+.buttonsTop{
+    display: flex;
+    align-items: center;    
+}
+
+.circleButtonWhite{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.circleButtonBlue{
+    background-image: linear-gradient(rgb(0, 216, 235), rgb(0, 83, 184));
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    border: solid black 1px;
+}
+
+.buttonRed{
+    background-color: rgb(156, 0, 0);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: solid black 1px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.buttonGreen{
+    background-color: green;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: solid black 1px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.buttonYellow{
+    background-color: yellow;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: solid black 1px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.pokemonSearch{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.buttonSearch{
+    margin-left: 5px;
+    color: red;
+    background-color: white;
+}
+
+.inputPokedex{    
+    width: 260px;
+}
+
+.screenLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.pokemonView{
+    background-color: #598130;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: solid 1px black;
+
+}
+
+.footerLeft{
+    margin-top: 15px;
+    margin-left: 25px;
+    background-color: #598130;
+    width: 290px;
+    height: 55px;
+    border: solid 1px black;    
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.pokemonName{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pokemonID{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pokemonTypes{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8px;
+}
