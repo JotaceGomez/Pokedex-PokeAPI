@@ -194,3 +194,49 @@
     justify-content: center;
     align-items: center;
 }
+
+.decoration2{
+    background-image: linear-gradient(to top, rgb(63, 0, 100), rgb(157, 0, 219));
+    border: solid 2px white;
+    border-radius: 10%;
+    width: 100px;
+    height: 120px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Bangers";
+    font-size: 18pt;
+    
+}
+
+.textAttacks{
+    font-family: "Press Start 2P";
+    font-size: 6pt;    
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.screenRightAttacks{
+    background-color: #598130;
+    border: solid black 1px;
+    height: 120px;
+    width: 180px;
+    margin-left: 25px;
+}
+
+.footerRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.decoration3{
+    background-image: linear-gradient(to top, rgb(62, 62, 62), rgb(184, 184, 184));
+    border: solid 1px black;
+    width: 290px;
+    height: 10px;
+    
+}

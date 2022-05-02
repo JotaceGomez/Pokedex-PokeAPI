@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { PokedexServiceService } from 'src/app/services/pokedex-service.service';
+
 
 @Component({
   selector: 'app-pokedex',
@@ -9,7 +11,7 @@ import { PokedexServiceService } from 'src/app/services/pokedex-service.service'
 export class PokedexComponent implements OnInit {
 
   pokemon: any;
-  searchedName: string = "6";
+  searchedName: string = "";
   rotation: boolean = true;
 
   constructor(private pokedexService: PokedexServiceService) { }

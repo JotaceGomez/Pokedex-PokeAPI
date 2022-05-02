@@ -70,8 +70,45 @@
                 <div class="decoration1">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" width="80px" alt="pokeball">
                 </div>
+            </div>
+
+            <div class="textAndScreen">
+                <div class="fixText">Height</div>
+                <div class="miniScreen">{{pokemon.height}}</div>                
+            </div>
+
+            <div class="textAndScreen">
+                <div class="fixText">Weight</div>
+                <div class="miniScreen">{{pokemon.weight}}</div>                
+            </div>
+
+            <div class="headerRight">
+                
+                <div class="decoration2">
+                    ATTACKS
+                </div>
+
+                <div class="screenRightAttacks">     
+                    <div class="textAttacks">
+                        <p>{{pokemon.moves[5].move.name}}</p>
+                        <p>{{pokemon.moves[35].move.name}}</p>
+                        <p>{{pokemon.moves[25].move.name}}</p>
+                        <p>{{pokemon.moves[67].move.name}}</p>
+                    </div>                           
+                </div>
 
             </div>
+
+                <div class="textAndScreen">
+                    <div class="fixText">Experience</div>
+                    <div class="miniScreen">
+                        {{pokemon.base_experience}}
+                    </div>                
+                </div>    
+
+                <div class="footerRight">
+                    <div class="decoration3"></div>
+                    </div>
 
 
         </div>
