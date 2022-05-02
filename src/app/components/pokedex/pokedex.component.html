@@ -17,31 +17,62 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
                 </button>
+                <button class="buttonRotatePokemon" (click)="rotatePokemon()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                        <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                      </svg>
+                </button>    
             </div>
 
             <div class="screenLeft">
-                <div class="pokemonView">
-                    <img src="{{pokemon.sprites.front_default}}" width="100%" alt="">
-                    <!-- <img src="{{pokemon.sprites.back_default}}" alt="">
-                    <img src="{{pokemon.sprites.front_shiny}}" alt="">
-                    <img src="{{pokemon.sprites.back_shiny}}" alt=""> -->
-
-
+                <div class="pokemonView">                    
+                    <img *ngIf="rotation; else rotated" src="{{pokemon.sprites.front_default}}" alt="">
+                    <ng-template #rotated><img src="{{pokemon.sprites.back_default}}" alt=""></ng-template>
                 </div>
             </div>
 
-            <div class="footerLeft">
-             <div class="line1">
-                <p class="pokemonName">Name: {{pokemon.name}}</p>
-                <p class="pokemonID">ID: {{pokemon.id}}</p>
+            <div class="textAndScreen">
+                <div class="fixText">Name</div>
+                <div class="miniScreen">{{pokemon.name}}</div>                
             </div>
-                <p class="pokemonTypes">Type:
-                    {{pokemon.types[0].type.name}}</p>
-                </div>
 
+            <div class="textAndScreen">
+                <div class="fixText">ID</div>
+                <div class="miniScreen">{{pokemon.id}}</div>                
+            </div>
+
+            <div class="textAndScreen">
+                <div class="fixText">Type</div>
+                <div class="miniScreen">{{pokemon.types[0].type.name}}</div>                
+            </div>
+
+            <div class="textAndScreen">
+                <div class="fixText">Ability</div>
+                <div class="miniScreen">{{pokemon.abilities[0].ability.name}}</div>                
+            </div>
+         
 
         </div>
+
         <div class="pkdxTemplateRight">
+            <div class="headerRight">
+                <div class="screenRight">     
+                    <div class="textStats">
+                        <p>Attack {{pokemon.stats[1].base_stat}}</p>
+                        <p>Defense {{pokemon.stats[2].base_stat}}</p>
+                        <p>Special Attack {{pokemon.stats[3].base_stat}}</p>
+                        <p>Special Defense {{pokemon.stats[4].base_stat}}</p>
+                        <p>Speed {{pokemon.stats[5].base_stat}}</p>
+                    </div>                           
+                </div>
+
+                <div class="decoration1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" width="80px" alt="pokeball">
+                </div>
+
+            </div>
+
 
         </div>
     </div>

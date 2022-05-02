@@ -9,12 +9,12 @@ import { PokedexServiceService } from 'src/app/services/pokedex-service.service'
 export class PokedexComponent implements OnInit {
 
   pokemon: any;
-  searchedName: string = "";
+  searchedName: string = "6";
+  rotation: boolean = true;
 
   constructor(private pokedexService: PokedexServiceService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 //Obtiene el pokemon por nombre a través del ngModel y lo guarda en la variable pokemon
   searchPokemon(name: string) {
@@ -25,5 +25,8 @@ export class PokedexComponent implements OnInit {
     )
   };
 
+  rotatePokemon(){
+    this.rotation = !this.rotation;
+  }
 
 }
